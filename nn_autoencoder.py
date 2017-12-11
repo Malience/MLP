@@ -65,7 +65,7 @@ def AERun(data, X, hidden, load=None):
         return hidden.eval({X: data})
     
 class PokeEncoder():
-    def __init__(self, name, pokemon_layers, team_layers, matchup_layers):
+    def __init__(self, name, pokemon_layers=None, team_layers=None, matchup_layers=None):
         self.name = name
         self.p_layers = pokemon_layers
         self.t_layers = team_layers
